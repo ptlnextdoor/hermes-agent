@@ -20,6 +20,10 @@ You are running an inbox sweep for the Venn Concierge Pilot. This runs 3x/day
    dispatch it.
 6. Output ONE message listing each drafted reply:
    - Sender + subject (one line)
+   - One provenance line: WHY this draft exists, tied to the source
+     ("drafting because Sarah asked for the budget breakdown in her 9:14
+     email"). Visible reasoning is what keeps trust calibrated — especially
+     after a mistake, the user must be able to see why you did what you did.
    - The drafted reply text (short, 2-4 sentences max)
    - End each with: "Reply: [send/edit/skip]"
 7. This cron job's own run ends after posting the draft — it does not wait
